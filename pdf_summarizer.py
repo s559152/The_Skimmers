@@ -40,7 +40,7 @@ def summarize_pdfs_from_folder(pdfs_folder):
     return summaries
 
 # Streamlit App
-st.title("Multiple PDF Summarizer")
+st.title("The Skimmers Multiple PDF Summarizer")
 
 # Allow user to upload PDF files
 pdf_files = st.file_uploader("Upload PDF files", type="pdf", accept_multiple_files=True)
