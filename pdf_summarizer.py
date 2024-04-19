@@ -6,7 +6,7 @@ import tempfile
 import os
 
 
-# Load pre-trained BART model and tokenizer
+# Load pre-trained BART model & tokenizer
 model_name = "facebook/bart-large-cnn"
 model = BartForConditionalGeneration.from_pretrained(model_name)
 tokenizer = BartTokenizer.from_pretrained(model_name)
@@ -17,6 +17,7 @@ def load_pdf_text(pdf_path):
         for page in pdf.pages:
             text += page.extract_text()
     return text
+
 
 def summarize_pdfs_from_folder(pdfs_folder):
     summaries = []
